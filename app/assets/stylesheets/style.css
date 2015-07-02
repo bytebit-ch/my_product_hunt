@@ -1,0 +1,311 @@
+.group:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+html {
+  font-size: 62.5%;
+  font-family: Raleway;
+}
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 17px;
+ 
+}
+.search-container {
+  width: 550px;
+  text-align: right;
+  display: inline-block;
+}
+
+.bar {
+  border-radius: 20px;
+  padding: 60px;
+  
+}
+
+.content-wrap {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.main-header {
+}
+
+.top-header {
+  border-bottom: 1px solid #DDD;
+  padding: 20px;
+}
+.logo {
+  float: left;
+  width: 200px;
+}
+.logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #DA552F;
+  line-height: 40px;
+}
+.logo:before {
+  margin-right: 10px;
+  float: left;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  content: 'P';
+  color: white;
+  background: #DA552F;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+
+}
+.search {
+  border:0;
+}
+.login {
+  float: right;
+  color: #CCC;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 40px;
+}
+.login:hover {
+  color: #DA552F;
+}
+.add-new-post {
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 1.8rem;
+  float: right;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  background: #DA552F;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  text-decoration: none;r
+}
+
+
+
+.main-nav {
+  border-bottom: 1px solid #DDD;
+  /*padding: 20px;*/
+}
+.main-nav-links {
+  list-style: none;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  color: #BBB;
+}
+.main-nav-links li {
+  text-transform: uppercase;
+  float: left;
+  margin-right: 20px;
+  padding: 15px 0;
+}
+.main-nav-links li.active {
+  color: #cc66ff;
+  border-bottom: 3px solid #cc66ff;
+}
+
+.main-nav-links li.games:hover {
+  color: #99ffcc;
+  border-bottom: 3px solid #99ffcc;
+}
+
+.main-nav-links li.collections:hover {
+  color: #5898F1;
+  border-bottom: 3px solid #5898F1;
+}
+
+.main-nav-links li.news:hover {
+  color: #990066;
+  border-bottom: 3px solid #990066;
+}
+
+.vote-wrap:hover{
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+      color: red;
+}
+
+
+.day-header {
+  text-align: center;
+  padding: 20px 0;
+}
+.day-header h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #222;
+  margin: 0;
+}
+.day-header span {
+  font-size: 1.4rem;
+  color: #AAA;
+}
+
+
+.post {
+  padding: 10px;
+  /*background: red;*/
+}
+.post:hover {
+  background: #EEE;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+.vote-wrap {
+  font-size: 1.3rem;
+  width: 60px;
+  float: left;
+  text-align: center;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s, color 1s;
+}
+.post-content {
+  float: left;
+}
+.post-title {
+  color: #BBB;
+  font-size: 2rem;
+  margin: 0;
+}
+.post-description {
+  font-size: 1.7rem;
+  color: #999;
+  margin: 10px 0 0 0;
+}
+.post-meta {
+  width: 100px;
+  float: right;
+}
+.post-creator {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  float: right;
+
+}
+.post-comments {
+  margin-left: 30px;
+  line-height: 34px;
+  float: right;
+  font-size: 1.6rem;
+  color: #BBB;
+}
+
+.post-content {
+  text-decoration: none;
+}
+
+
+.hoverbox .box {
+  display: none;
+  border: 1px solid black;
+  position: absolute;
+  width: 150px;
+  height: 180px;
+  top: -195px;
+  background: white;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.hoverbox {
+  display: inline-block;
+  position: relative;
+}
+
+.hoverbox:hover .box {
+  display: block;
+  position: absolute;
+}
+
+#avatar {
+  
+  text-align: center;
+}
+
+#follow {
+  background: #99ffcc;
+  text-align: center;
+  border-radius: 10px;
+
+  width: 70px;
+  margin-left: 40px;
+  
+}
+
+#secondline {
+  text-align: center;
+}
+
+#popup {
+  float: center;
+  height: 40px;
+  width: 40px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+}
+
+#magnifier {
+  width: 17px;
+  height; 17px;
+}
+
+#exit 
+{
+  width: 20px;
+  height: 20px;
+  padding-top: 0px;
+  margin: -3px;
+  flaot: left;
+}
+
+input.search { 
+  border: 0;
+  width: 200px;
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s; 
+  font-size: 18px;
+  outline: 0;
+}
+
+.bar {
+  border: 1px solid #D3D3D3;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 60px;
+}
+
+.search:hover {
+  width: 460px;
+}
+
+/* End of navigation bar */
+/* Start of Section One */
+
+.section_one {
+  
+}
+
+.section_one_link a:link {
+  text-decoration: none;
+}

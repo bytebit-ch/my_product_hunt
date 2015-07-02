@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyProductHunt</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="style.css">
+<link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header class="main-header">
+
+    <div class="top-header">
+
+      <div class="content-wrap group">
+
+        <div class="logo">
+          <h1>Product Hunt</h1>
+        </div>
+        <div class='search-container'>
+        <div class="bar">
+           <label>
+            <img id='magnifier'src="<%=asset_path('magnifier58.svg')%>">
+            </label>
+          <input type="search" class="search" placeholder="Search for a product..."> 
+        </div>
+      </div>
+
+        <a href="#" class="add-new-post">+</a>
+        <a href="#" class="login">Log in</a>
+
+      </div>
+
+
+    </div>
+
+    <nav class="main-nav">
+
+      <div class="content-wrap">
+
+        <ul class="main-nav-links group">
+          <li class="active">Tech</li>
+          <li class="games">Games&beta;</li>
+          <li class ="collections">Collections</li>
+          <li class="news">News</li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+<main class='main-content'>
+  <div class='content-wrap'>
+
+  <header class="day-header">
+          <h2>Today <span class="subtext">June 23rd</span></h2>
+        </header>
+
+  
+<%= yield %>
+  </div>
+</main>
+</body>
+</html>
