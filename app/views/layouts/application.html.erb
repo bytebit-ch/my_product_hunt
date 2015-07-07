@@ -29,8 +29,8 @@
         </div>
       </div>
 
-        <a href="#" class="add-new-post">+</a>
-        <a href="#" class="login">Log in</a>
+       
+<%= link_to '+', new_post_path, class: "add-new-post" %> 
 
       </div>
 
@@ -41,7 +41,7 @@
 
       <div class="content-wrap">
 
-        <ul class="main-nav-links group">
+        <ul class="main-nav-links group"> 
           <li class="active">Tech</li>
           <li class="games">Games&beta;</li>
           <li class ="collections">Collections</li>
@@ -57,7 +57,8 @@
   <div class='content-wrap'>
 
   <header class="day-header">
-          <h2>Today <span class="subtext">June 23rd</span></h2>
+          <h2>Today <!-- <span class="subtext">07/07/15</span> --> 
+                <%= Time.new.strftime '%D' %> </h2>
         </header>
 
   

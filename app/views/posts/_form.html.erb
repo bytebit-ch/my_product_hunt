@@ -14,29 +14,38 @@
   <div class="field">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
-    <br>
+    
   </div>
+  <br>
   <div class="field">
     <%= f.label :description %><br>
     <%= f.text_field :description %>
-    <br>
+    
+
   </div>
+  <br>
   <div class="field">
     <%= f.label :category %><br>
     <%= f.radio_button(:category, "Tech") %>
     <%= label_tag("Tech") %>
+    &nbsp;
     <%= f.radio_button(:category, "Games") %>
-    <%= label_tag("Games   ") %>
+    <%= label_tag("Games") %> 
+    &nbsp;
     <%= f.radio_button(:category, "Collections") %>
     <%= label_tag("Collections   ") %>
+    &nbsp;
     <%= f.radio_button(:category, "News") %>
-    <%= label_tag("News   ") %>
+    <%= label_tag("News") %>
   </div>
+  <br>
   <div class="field">
     <%= f.label :link %><br>
     <%= f.text_field :link %>
   </div>
+  <br>
   <div class="actions">
+    <br>
     <%= f.submit %>
   </div>
 <% end %>

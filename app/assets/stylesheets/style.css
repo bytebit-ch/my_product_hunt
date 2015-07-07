@@ -277,7 +277,7 @@ img {
   padding-top: 0px;
   margin: -3px;
   flaot: left;
-}
+} 
 
 input.search { 
   border: 0;
@@ -287,7 +287,7 @@ input.search {
   font-size: 18px;
   outline: 0;
 }
-
+ 
 .bar {
   border: 1px solid #D3D3D3;
   display: inline-block;
@@ -308,4 +308,10 @@ input.search {
 
 .section_one_link a:link {
   text-decoration: none;
+}
+
+.field input {
+  color: #999;
+  border-radius: 6%;
+  border: 2px double #999;
 }
