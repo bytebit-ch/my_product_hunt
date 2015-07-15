@@ -13,11 +13,12 @@ class CommentsController < ApplicationController
   def create
     @comment = @post.comments.new(comment_params)
     @comment.user = current_user
-      if @comment.save
-        redirect_to_post_comments_path(@post), notice: 'Comment was successful' 
-      else
-        render :new  
-      end
+     
+   if @comment.save
+      redirect_to_post_comments_path(@post), notice: "Comment was successful"
+    else
+      render :new  
+    end
     
   end
 
@@ -35,4 +36,5 @@ class CommentsController < ApplicationController
     def comment_params
       params.require(:comment).permit(:content)
     end
+
 end

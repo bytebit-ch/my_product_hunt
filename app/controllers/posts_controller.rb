@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 
   # GET /posts
   def index
-    @posts = Post.all.group_by(&:day)
+    @posts = Post.all
   end
 
   # GET /posts/new

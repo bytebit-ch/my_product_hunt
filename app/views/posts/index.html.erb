@@ -17,10 +17,11 @@
 </div>
 <div class="post-meta">
             <span class="post-comments"><%= post.comments.count %></span>
-            <img src='http://www.wpclipart.com/signs_symbol/speech_bubbles/speech_solid/comment_bubble_solid_grey_right.svg'
+          
           <%= link_to post_comments_path(post) do %>
-            
+             <i class="fa fa-comment"></i>
             <% end %>
+          </div>
 
             <div class="hoverbox">
             <img src="https://secure.gravatar.com/avatar/fd057f1d585d43bba970999c90eea118.png" alt="post-creator" class="post-creator">

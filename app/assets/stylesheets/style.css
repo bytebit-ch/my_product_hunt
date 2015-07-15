@@ -195,6 +195,13 @@ img {
   width: 100px;
   float: right;
 }
+
+.post-meta > * {
+  float: right;
+  line-height: 50px;
+  color: #BBB;
+  font-size: 1.6rem;
+}
 .post-creator {
   -webkit-border-radius: 50%;
           border-radius: 50%;
@@ -231,6 +238,7 @@ img {
 .hoverbox {
   display: inline-block;
   position: relative;
+  float:right;
 }
 
 .hoverbox:hover .box {
@@ -315,3 +323,4 @@ input.search {
   border-radius: 6%;
   border: 2px double #999;
 }
+
