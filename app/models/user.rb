@@ -10,4 +10,5 @@ class User < ActiveRecord::Base
 		check_mx: true,
 		mx_message: "MX record invalid"
 	}
+  has_many :comments
 end

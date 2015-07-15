@@ -4,6 +4,6 @@ class Post < ActiveRecord::Base
 		message: "Invalid URL make sure to input the full link"
 	}
 	validates_presence_of :title, :description, :category
-
+	has_many :comments
 end
  
