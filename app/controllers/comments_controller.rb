@@ -15,7 +15,7 @@ class CommentsController < ApplicationController
     @comment.user = current_user
      
    if @comment.save
-      redirect_to_post_comments_path(@post), notice: "Comment was successful"
+      redirect_to(post_comments_path([@post,@comment]), notice: "Comment was successful")
     else
       render :new  
     end

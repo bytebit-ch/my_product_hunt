@@ -192,7 +192,7 @@ img {
   margin: 10px 0 0 0;
 }
 .post-meta {
-  width: 100px;
+  width: 120px;
   float: right;
 }
 
@@ -324,3 +324,7 @@ input.search {
   border: 2px double #999;
 }
 
+.post-meta i {
+  padding-left: 20px;
+  vertical-align: super;
+}
