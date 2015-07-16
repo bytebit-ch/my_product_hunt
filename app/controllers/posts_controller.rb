@@ -44,12 +44,12 @@ class PostsController < ApplicationController
     redirect_to posts_path, notice: 'Post was successfully destroyed.'
   end
 
-  private
-
   def upvote 
     @post.votes.create(user: current_user)
     redirect_to posts_path
   end
+
+  private
 
   # Use callbacks to share common setup or constraints between actions.
   def set_post

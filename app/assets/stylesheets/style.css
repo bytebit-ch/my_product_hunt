@@ -137,6 +137,12 @@ img {
   border-bottom: 3px solid #990066;
 }
 
+.vote-wrap {
+  border: none;
+  background: none;
+  font-size: 100px;
+}
+
 .vote-wrap:hover{
   -webkit-transform: scale(1.15);
   -ms-transform: scale(1.15);
