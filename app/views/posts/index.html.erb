@@ -1,13 +1,18 @@
-
+ 
 
     <% @posts.each do |post| %>
       
 <div class='post group'>
-  <div class="vote-wrap">
-            ▲
-            <br>
-            <span class="votes">999</span>
-          </div>
+  
+
+  <% button_to upvote_post_path(post), class:'upvote' do%>
+      &#9650;
+    <br>
+  
+    <span class="votes"><%= post.votes.count %></span>
+            <% end %>
+
+
  <div class="post-content">
   <a href='<%=post.link%>'>
             <h3 class="post-title"><%= post.title %></h3>
